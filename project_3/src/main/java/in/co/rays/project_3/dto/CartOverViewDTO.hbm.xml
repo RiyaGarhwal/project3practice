@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Dec 26, 2024, 12:30:54 PM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping package="in.co.rays.project_3.dto.CartOverViewDTO">
+    <class name="CartOverViewDTO" table="ST_CARTOVERVIEWDTO">
+    
+    
+    <id name="id" type="java.lang.Long">
+			<column name="ID" />
+			<generator class="increment" />
+		</id>
+		
+		<property name="customerName" type="java.lang.String">
+            <column name="CUSTOMERNAME" />
+        </property>
+		
+                <property name="product" type="java.lang.String">
+            <column name="PRODUCT" />
+        </property>
+        <property name="transactionDate" type="java.util.Date">
+            <column name="TRANSACTIONDATE" />
+        </property>
+        <property name="quantityOrdered" type="int">
+            <column name="QUANTITYORDERED" />
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Dec 21, 2024, 2:18:00 PM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <subclass name="in.co.rays.project_3.dto.StockPurchaseDTO" extends="in.co.rays.project_3.dto.BaseDTO" discriminator-value="StockPurchaseDTO" lazy="false">
+        <property name="quantity" type="int">
+            <column name="QUANTITY" />
+        </property>
+        <property name="orderType" type="java.lang.String">
+            <column name="ORDERTYPE" />
+        </property>
+        <property name="purchaseDate" type="java.util.Date">
+            <column name="PURCHASEDATE" />
+        </property>
+        <property name="purchasePrice" type="double">
+            <column name="PURCHASEPRICE" />
+        </property>
+    </subclass>
+</hibernate-mapping>
