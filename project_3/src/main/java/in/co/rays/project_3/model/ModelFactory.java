@@ -107,6 +107,19 @@ public final class ModelFactory {
 		return physicianModel;
 	}
 	
+	public TradeHistoryModelInt getTradeHistoryModel() {
+		TradeHistoryModelInt tradeHistoryModel = (TradeHistoryModelInt) modelCache.get("tradeHistoryModel");
+		if (tradeHistoryModel == null) {
+			if ("Hibernate".equals(DATABASE)) {
+				tradeHistoryModel = new TradeHistoryModelHibImp();
+			}
+			
+			modelCache.put("tradeHistoryModel", tradeHistoryModel);
+		}
+
+		return tradeHistoryModel;
+	}
+	
 	public TransportationModelInt getTransportationModel() {
 		TransportationModelInt transportationModel = (TransportationModelInt) modelCache.get("transportationModel");
 		if (transportationModel == null) {

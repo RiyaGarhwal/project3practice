@@ -290,6 +290,36 @@ function validateDoubleInput(inputElement, errorElementId, maxLength) {
     errorMessage.textContent = '';
 }
 
+function handleAlphaNumInput(inputElement, errorElementId, maxLength, minLength) {
+    const errorMessage1 = document.getElementById(errorElementId);
+    let currentValue1 = inputElement.value;
+    // Allow letters, spaces, and dots, but not at the beginning
+    const allowedPattern = /^[a-zA-Z0-9]/;
+    // Check if the first character is a letter
+    if (currentValue1.length > 0 && !/^[a-zA-Z0-9]/.test(currentValue1[0])) {
+        errorMessage1.textContent = 'only AlphaNum are allowed';
+        currentValue1 = currentValue1.replace(/^[^a-zA-Z0-9]+/, '');
+    } else if (!allowedPattern.test(currentValue1)) {
+        errorMessage1.textContent = 'Only AlphaNum are allowed.';
+        currentValue1 = currentValue1.replace(/[^a-zA-Z0-9]/g, '');
+    }
+    else if (currentValue1.length < minLength){
+    	 errorMessage1.textContent = `Minimun ${minLength} characters are required.`;
+    }
+    else {
+        if (currentValue1.length > maxLength) {
+            errorMessage1.textContent = `Only ${maxLength} characters are allowed.`;
+            currentValue1 = currentValue1.slice(0, maxLength);
+        } else {
+            errorMessage1.textContent = '';
+        }
+        
+    }
+
+    inputElement.value = currentValue1.slice(0, maxLength);
+}
+
+
 
 
 

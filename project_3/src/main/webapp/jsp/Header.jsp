@@ -250,6 +250,23 @@
 
 						</a>
 					</div></li>
+					
+					<li class="nav-item dropdown" style="padding-left: 5px"><a
+					class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
+					role="button" data-toggle="dropdown" aria-haspopup="true"
+					aria-expanded="false"> <font style="color: Black;">TradeHistory</font>
+
+				</a>
+
+					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+
+						<a class="dropdown-item" href="<%=ORSView.TRADEHISTORY_CTL%>"><i
+							class="fas fa-calculator"></i>Add TradeHistory</a> <a
+							class="dropdown-item" href="<%=ORSView.TRADEHISTORY_LIST_CTL%>">
+							<i class="fas fa-sort-amount-down"></i>TradeHistory List
+
+						</a>
+					</div></li>
 
 
 				<li class="nav-item dropdown" style="padding-left: 5px"><a

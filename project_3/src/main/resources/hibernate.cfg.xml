@@ -61,7 +61,10 @@
             <mapping resource="in/co/rays/project_3/hbm/TransportationDTO.hbm.xml"/>
             <mapping resource="in/co/rays/project_3/hbm/FollowUpDTO.hbm.xml"/> 
            
-            <mapping resource="in/co/rays/project_3/hbm/PhysicianDTO.hbm.xml"/>
+            <mapping resource="in/co/rays/project_3/hbm/PhysicianDTO.hbm.xml"/> 
+            
+            <mapping resource="in/co/rays/project_3/hbm/TradeHistoryDTO.hbm.xml"/>
+            
             
             
 		<!--<mapping class="in.co.rays.project_3.dto.UserDTO"/> <mapping class="in.co.rays.project_3.dto.CollegeDTO"/> 

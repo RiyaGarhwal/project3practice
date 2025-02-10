@@ -50,6 +50,11 @@ public interface ORSView {
 	public String PHYSICIAN_LIST_CTL = APP_CONTEXT + "/ctl/PhysicianListCtl";
 	public String PHYSICIAN_LIST_VIEW = PAGE_FOLDER + "/PhysicianListView.jsp";
 	
+	public String TRADEHISTORY_VIEW = PAGE_FOLDER + "/TradeHistoryView.jsp";
+	public String TRADEHISTORY_CTL = APP_CONTEXT + "/ctl/TradeHistoryCtl";
+	public String TRADEHISTORY_LIST_CTL = APP_CONTEXT + "/ctl/TradeHistoryListCtl";
+	public String TRADEHISTORY_LIST_VIEW = PAGE_FOLDER + "/TradeHistoryListView.jsp";
+	
 	
 
 	
